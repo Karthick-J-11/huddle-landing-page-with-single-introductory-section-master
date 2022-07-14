@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 375px;
+    margin: auto;
+}
+
+#container {
+    width: 375px;
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+    
+.logo {
+    width: 300px;
+    margin: 30px 30px;
+}
+
+.logo img {
+    width: 120px;
+    margin: auto;
+}
+
+main {
+    width: 300px;
+    height: 100%;
+    margin: 30px auto;
+    
+}
+
+.mackup-img img {
+    width: 300px;
+    margin: auto;
+}
+
+.page-header {
+    width: 300px;
+    margin: 50px auto auto auto;
+    
+}
+
+.page-header h1 {
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+.page-parag {
+    width: 300px;
+    margin: 30px auto auto auto;
+    text-align: center;
+
+}
+
+.page-parag p {
+    color: #fff;
+    font-size: 14.5px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.btn {
+    width: 300px;
+    margin: 40px auto auto auto;
+    text-align: center;
+
+}
+
+.btn a {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 90px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color:hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 3px 10px #000;
+}
+
+.btn a:hover {
+    color: #fff;
+    background: hsl(300, 69%, 71%);
+}
+
+.social {
+    width: 300px;
+    margin: 70px auto auto auto;
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 10px;;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f {
+    padding: 5px 7px;
+}
+
+.fa-brands:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 850px) {
+
+    body {
+        margin: auto;
+        width: 1440px;
+    }
+    
+    #container {
+        width: 1440px;
+        height: 800px;
+        background-image: url("images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-color: hsl(257, 40%, 49%);
+     }
+
+     .logo {
+        width: 100%;
+        margin: 10px 30px 0 30px;
+    }
+    
+    .logo img {
+        width: 240px;
+        padding: 30px 0 0 50px;
+    }
+
+     header {
+        width: 100%;
+        margin: 30px 30px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 75px  700px 1fr 75px;
+        grid-template-rows: 1fr 100px;
+        width: 100%;
+    }
+
+    .mackup-img {
+        grid-column: 2;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .mackup-img img {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+
+    .right {
+        grid-column: 3;
+        width: 100%;
+        padding: 50px 50px;
+    }
+
+    .page-header {
+        width: 100%;
+        margin: 30px auto 10px auto;
+    }
+    
+    .page-header h1 {
+        font-size: 40px;
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    .page-parag {
+        width: 100%;
+        text-align: left;
+    
+    }
+    
+    .page-parag p {
+        color: #fff;
+        font-size: 15px;
+        padding-right: 30px;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .btn a {
+        padding: 15px 50px;
+        font-size: 15px;
+    }
+    
+    .social {
+        grid-column: 3;
+        grid-row: 2;
+        width: 300px;
+        height: 50px;
+        margin: 20px 0 0 300px;
+    }
+
+}
